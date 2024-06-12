@@ -1,83 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-    </head>
-    <!---------------------------------------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------------------------------------->
-    <!---------------------------------------------------------------------------------------------------------->
-    <body>
-        <div class="header">
-            <div id="banner">
-                <div id="banner-content">
-                    <!-- Existing content -->
-                    <form id="search-form">
-                        <input type="text" id="product-search" placeholder="Search for products...">
-                    </form>
-                    <!--Logo button-->
-                    <button id="logo-button">
-                        <img src="images\favicon_io\favicon-32x32.png" alt="Logo">
-                    </button>
-                    <!--Store button-->
-                    <div id="store-button">
-                        <button><img src="images\favicon_io\favicon-32x32.png" alt="Store"></button>
-                    </div>
-                    <!-- Account button -->
-                    <div id="account-button">
-                        <button><img src="images\favicon_io\favicon-32x32.png" alt="Account"></button>
-                    </div>
-                    <!-- Checkout button -->
-                    <div id="checkout-button">
-                        <button><img src="images\favicon_io\favicon-32x32.png" alt="Shopping Cart"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!---------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------->
 
-        <!---------------------------------------------------------------------------------------------------------->
-        <!---------------------------------------------------------------------------------------------------------->
-        <!---------------------------------------------------------------------------------------------------------->
-        <div class="subheader">
-            <!-- Departments button -->
-            <div id="departments-button" class="dropdown">
-                <button class="dropdown-item" onclick="toggleDropdown('departments')">Departments</button>
-                <div class="dropdown-content" id="departments-content">
-                    <a href="#">Electronics</a>
-                    <a href="#">Clothing</a>
-                    <a href="#">Home & Kitchen</a>
-                    <!-- Add more departments as needed -->
+<body>
+    <div class="header">
+        <div id="banner">
+            <div id="banner-content">
+                <!-- Existing content -->
+                <form id="search-form">
+                    <input type="text" id="product-search" placeholder="Search for products...">
+                </form>
+                <!--Logo button-->
+                <button id="logo-button">
+                    <img src="images\favicon_io\favicon-32x32.png" alt="Logo">
+                </button>
+                <!--Store button-->
+                <div id="store-button">
+                    <button><img src="images\favicon_io\favicon-32x32.png" alt="Store"></button>
+                </div>
+                <!-- Account button -->
+                <div id="account-button">
+                    <button><img src="images\favicon_io\favicon-32x32.png" alt="Account"></button>
+                </div>
+                <!-- Checkout button -->
+                <div id="checkout-button">
+                    <button><img src="images\favicon_io\favicon-32x32.png" alt="Shopping Cart"></button>
                 </div>
             </div>
-            <!-- Services button -->
-            <div id="services-button" class="dropdown">
-            <button class="dropdown-item" onclick="toggleDropdown('services')">Services</button>
-                <div class="dropdown-content" id="services-content">
-                    <a href="#">Auto</a>
-                    <a href="#">Pharmacy</a>
-                    <a href="#">Health and Wellness</a>
-                    <!-- Add more departments as needed -->
         </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <div class="subheader">
+        <!-- Departments button -->
+        <div id="departments-button" class="dropdown">
+            <button>Departments</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Home & Kitchen</a></li>
+                    <div id="employee-login">
+                        <a href="employeelogin.html">Employee Login</a>
+                    </div>
+                    
+                </ul>
             </div>
-    
-        <!-- Rest of your webpage content -------------------------------------------------------------------------->
-        <!---------------------------------------------------------------------------------------------------------->
-        <!---------------------------------------------------------------------------------------------------------->
-        <footer class="footer">
-            <p>&copy; 2024 EVE'S BIG BOX STORES</p>
-            <p>
-                <a href="#">Terms of Service</a> |
-                <a href="#">Privacy Policy</a> |
-                <a href="#">Contact Us</a>
-            </p>
-        </footer>
-    
-        <script>
-            function toggleDropdown(type) {
-                const content = document.getElementById(`${type}-content`);
-                content.style.display = content.style.display === 'block' ? 'none' : 'block';
-            }
-        </script>
-    </body>
-    </html>
+        </div>
+        <!-- Services button -->
+        <div id="services-button" class="dropdown">
+            <button>Services</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">Auto</a></li>
+                    <li><a href="#">Pharmacy</a></li>
+                    <li><a href="#">Health and Wellness</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Add more departments as needed -->
+    </div>
+    </div>
+
+    <!-- Rest of your webpage content -------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <footer class="footer">
+        <p>&copy; 2024 EVE'S BIG BOX STORES</p>
+        <p>
+            <a href="#">Terms of Service</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleDropdown(type) {
+            const content = document.getElementById(`${type}-content`);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
