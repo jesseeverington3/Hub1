@@ -2,150 +2,161 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/* header container --------------------------------------------------------------------------------------------*/
-#header{
+  }
+  
+  /* header container --------------------------------------------------------------------------------------------*/
+  #header {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
-}
-
-#banner {
-    position:  fixed;
+  }
+  
+  #banner {
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #DDEEEE;
     width: 100%;
     height: 100px;
     border: 4px solid #000;
-}
-
-#banner-content {
+  }
+  
+  #banner-content {
     width: 100%;
     margin: 0 auto;
     padding: 30px;
     text-align: center;
-}
-
-#product-search {
+  }
+  
+  #product-search {
     width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-}
-
-#logo-button {
+  }
+  
+  #logo-button {
     position: absolute;
     top: 0;
     left: 0;
     width: auto;
     margin-top: 30px;
     /* Add other styling properties */
-}
-
-#store-button {
-position: absolute;
-top: 0;
-left: 80px; /* Adjust the distance from the logo button */
-margin-top: 30px; /* Adjust as needed */
-z-index: 101;
-/* Add other styling properties */
-transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-#store-button:hover button::after {
+  }
+  
+  #store-button {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    /* Adjust the distance from the logo button */
+    margin-top: 30px;
+    /* Adjust as needed */
+    z-index: 101;
+    /* Add other styling properties */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+  }
+  
+  #store-button:hover button::after {
     content: "Store";
-}
-
-#account-button {
+  }
+  
+  #account-button {
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 30px;
     z-index: 101;
     /* Add other styling properties */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-#account-button:hover {
-    background-color: #F5A623; /* Change to your desired color */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+  }
+  
+  #account-button:hover {
+    background-color: #F5A623;
+    /* Change to your desired color */
     /* Add other hover styles */
-}
-
-#account-button:hover button::before {
+  }
+  
+  #account-button:hover button::before {
     content: "Account";
-}
-
-#checkout-button {
+  }
+  
+  #checkout-button {
     position: absolute;
     top: 0;
-    right: 80px; /* Adjust the distance from the account button */
-    margin-top: 30px; /* Adjust as needed */
+    right: 80px;
+    /* Adjust the distance from the account button */
+    margin-top: 30px;
+    /* Adjust as needed */
     z-index: 100;
-}
-
-#checkout-button:hover button::before {
+  }
+  
+  #checkout-button:hover button::before {
     content: "Checkout";
-}
-
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/* subheader container ---------------------------------------------------------------------------------------------*/
-#subheader {
+  }
+  
+  /* subheader container ---------------------------------------------------------------------------------------------*/
+  #subheader {
     background-color: #e0e0e0;
     padding: 10px;
     text-align: center;
-}
-
-#departments-button {
+  }
+  
+  #departments-button {
     position: fixed;
     left: 0;
     width: auto;
     margin-top: 100px;
     top: 0;
     padding: 0;
-}
-
-#services-button {
+  }
+  
+  #services-button {
     position: fixed;
-    left: 100px; /* Adjust the distance from the Departments button */
+    left: 100px;
+    /* Adjust the distance from the Departments button */
     width: auto;
     margin-top: 100px;
     top: 0;
     padding: 0;
-}
-
-/* Dropdown styles */
-#dropdown {
+  }
+  
+  /* Dropdown styles 
+  #dropdown {
     position: relative;
     display: inline-block;
-}
-
-#dropdown-content {
+  }
+  
+  #dropdown-content {
     display: none; /* Initially hidden */
+  /*
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#dropdown:hover .dropdown-content {
+  }
+  
+  #dropdown:hover .dropdown-content {
     display: block;
-}
-
-#dropdown-item {
+  }
+  
+  #dropdown-item {
     padding: 10px;
     text-decoration: none;
     color: #333;
     display: block;
-}
-    
-/* footer container ------------------------------------------------------------------------------------------------*/
-.footer {
+  } */
+  
+  /* footer container ------------------------------------------------------------------------------------------------*/
+  .footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -154,9 +165,34 @@ transition: background-color 0.3s ease; /* Smooth transition */
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-.footer a {
+  }
+  
+  .footer a {
     color: #fff;
     text-decoration: none;
-}
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  
